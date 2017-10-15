@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="homePane" prefHeight="727.0" prefWidth="1088.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adjhms.controller.HomeController">
+   <children>
+      <ImageView fitHeight="891.0" fitWidth="1210.0" layoutX="-7.0" opacity="0.95" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/home.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="476.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.97" />
+         </effect>
+      </ImageView>
+      <Text layoutX="340.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcom to ADJ Hospital Management System">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ButtonBar layoutX="60.0" layoutY="493.0" prefHeight="44.0" prefWidth="1026.0">
+        <buttons>
+            <Button fx:id="homeAdmit" mnemonicParsing="false" onAction="#actionAdmit" prefHeight="31.0" prefWidth="436.0" text="Admit">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+          <Button fx:id="homePatient" mnemonicParsing="false" onAction="#actionPatient" prefHeight="31.0" prefWidth="436.0" text="Patient">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeTreatment" mnemonicParsing="false" onAction="#actionTreatment" text="Treatment">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeTest" mnemonicParsing="false" onAction="#actionTest" text="Test">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="64.0" layoutY="686.0" prefHeight="44.0" prefWidth="1026.0">
+        <buttons>
+            <Button fx:id="homeStaff" mnemonicParsing="false" onAction="#actionStaff" prefHeight="44.0" prefWidth="429.0" text="Staff">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+          <Button mnemonicParsing="false" onAction="#actionWard" prefHeight="87.0" text="Ward" />
+            <Button fx:id="homeBilling" mnemonicParsing="false" onAction="#actionBilling" text="Billing">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeLogout" mnemonicParsing="false" onAction="#actionLogout" text="Logout">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <ImageView fitHeight="115.0" fitWidth="119.0" layoutX="398.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/paitent.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="112.0" layoutX="144.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Medical_staff-512.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="125.0" fitWidth="112.0" layoutX="634.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/treatment.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="112.0" layoutX="654.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Billing.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="139.0" fitWidth="101.0" layoutX="926.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logout-1-128.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="112.0" layoutX="906.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Medical_Supervision__Treatment-512.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="119.0" layoutX="143.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/medical_support.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="112.0" layoutX="401.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ward.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-1.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
